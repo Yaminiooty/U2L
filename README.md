@@ -1,1 +1,2 @@
-Command to bring container up:  docker-compose up -d
+Command to bring container up: 
+  docker-compose up -d

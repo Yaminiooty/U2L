@@ -16,3 +16,10 @@ services:
             
         ports:
             - "${MYSQL_PORT}:3306"
+
+    u2l_backend:
+        build: 
+            context: ./u2l_backend
+        ports:
+            - 8084:80
+             

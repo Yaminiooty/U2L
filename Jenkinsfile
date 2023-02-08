@@ -1,15 +1,11 @@
 pipeline {
+    agent { docker { image 'docker' } }
 
-   agent any
-   
-     stages {
-       stage('docker-compose') {
-           steps {
-              
-              sh "/usr/local/bin/docker-compose up -d"
-              
-           }
-       }
-   }
-     
+    stages {
+        stage('build') {
+            steps {
+                sh 'docker build -t my-container .'
+            }
+        }
+    }
 }

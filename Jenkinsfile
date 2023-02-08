@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t my-container .'
+                sh 'docker build -t my-container U2L/u2l_backend/'
             }
         }
     }

@@ -11,7 +11,7 @@ pipeline {
                             }
        stage('docker-compose') {
            steps {
-              sh "pwd"
+              sh "cd /var/jenkins_home/workspace/U2L"
               sh "docker-compose up -d"
               
            }

@@ -3,10 +3,12 @@ pipeline {
    agent any
    
      stages {
-       stage('clone') {
+       stage('checkout') {
            steps {
               
-              git clone https://github.com/Yaminiooty/U2L.git 
+               git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'
+                // Change file permisson
+                sh "chmod +x -R ./U2L" 
                   }
            }
        stage('docker-compose') {

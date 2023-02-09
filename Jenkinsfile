@@ -8,6 +8,7 @@ pipeline {
               
                git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'
                 // Change file permisson
+                sh "pwd"
                 sh "chmod +x -R ./U2L" 
                   }
            }

@@ -11,7 +11,7 @@ pipeline {
                 // Change file permisson
                 sh "pwd"
               
-                sh "mv -R * Jenrepo/"
+                sh "mv JenkinsPipeline /Jenrepo"
                 sh "cd Jenrepo"
                   }
            }

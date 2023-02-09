@@ -5,11 +5,14 @@ pipeline {
      stages {
        stage('checkout') {
            steps {
-              
+               
                git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'
+               sh "mkdir Jenrepo"
                 // Change file permisson
                 sh "pwd"
-                sh "chmod +x -R ./U2L" 
+              
+                sh "mv -R * /Jenrepo
+                sh "cd Jenrepo"
                   }
            }
        stage('docker-compose') {

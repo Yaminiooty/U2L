@@ -5,11 +5,10 @@ pipeline {
      stages {
         stage('clone') {
            steps {
-              sh "mkdir URLrepo"
-              sh "cd URLrepo"
-              git init
-              git clone https://github.com/Yaminiooty/U2L.git
               
+              git clone https://github.com/Yaminiooty/U2L.git XYZ
+              sh "cd XYZ"
+           
            }
            }
       

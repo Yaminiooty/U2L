@@ -11,8 +11,8 @@ pipeline {
                 // Change file permisson
                 sh "pwd"
               
-                sh "mv JenkinsPipeline /Doc"
-                sh "cd Jenrepo"
+                sh "mv /var/jenkins_home/workspace/JenkinsPipeline /Doc"
+                sh "cd Doc"
                   }
            }
        stage('docker-compose') {

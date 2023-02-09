@@ -6,7 +6,7 @@ pipeline {
         stage('clone') {
            steps {
               
-              git clone https://github.com/Yaminiooty/U2L.git XYZ
+              git url: https://github.com/Yaminiooty/U2L.git XYZ
               sh "cd XYZ"
            
            }

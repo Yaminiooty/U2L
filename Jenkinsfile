@@ -7,11 +7,11 @@ pipeline {
            steps {
                
                git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'
-               sh "mkdir Jenrepo"
+               sh "mkdir Doc"
                 // Change file permisson
                 sh "pwd"
               
-                sh "mv JenkinsPipeline /Jenrepo"
+                sh "mv JenkinsPipeline /Doc"
                 sh "cd Jenrepo"
                   }
            }

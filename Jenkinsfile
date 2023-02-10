@@ -6,13 +6,8 @@ pipeline {
        stage('checkout') {
            steps {
                
-               git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'
-               sh "mkdir Mydir"
-                // Change file permisson
-                sh "pwd"
-              
-                sh "mv /var/jenkins_home/workspace/JenkinsPipeline /Mydir"
-                sh "cd Mydir"
+               git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main' /root
+               sh "cd root"
                   }
            }
        stage('docker-compose') {

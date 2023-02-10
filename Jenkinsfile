@@ -6,8 +6,8 @@ pipeline {
        stage('checkout') {
            steps {
                
-               git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main' /root
-               sh "cd root"
+               git url: ' https://github.com/Yaminiooty/U2L.git', branch: 'main'    
+               
                   }
            }
        stage('docker-compose') {

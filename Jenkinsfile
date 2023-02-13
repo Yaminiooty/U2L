@@ -16,7 +16,7 @@ pipeline {
       
            steps {
               
-              sh "docker-compose -f /home/U2L/docker-compose.yml up -d"
+              sh "docker-compose -f /home/docker-compose.yml up -d"
               
            }
        }

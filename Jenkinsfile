@@ -21,6 +21,7 @@ pipeline {
       
            steps {
               sh "ls -a"
+              sh "sudo su"
               sh "docker-compose up -d"
               
            }

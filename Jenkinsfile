@@ -12,7 +12,7 @@ pipeline {
                sh "cd /var/jenkins_home/workspace/JenkinsPipeline"
                sh "ls -a"
                sh "mv U2L /root"
-               sh "cd /root/U2L"
+               
 
                
                   }

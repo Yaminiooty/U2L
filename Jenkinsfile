@@ -5,25 +5,19 @@ pipeline {
      stages {
        stage('checkout') {
            steps {
-               sh " cd /home "
-               sh " mkdir U22L"
-         
-               sh " git clone https://github.com/Yaminiooty/U2L.git /home/U22L"
-               sh "pwd"
-               sh " cd /home/U22L"
-               sh "pwd"
-              
+               sh  
+                cd /home 
+                mkdir U22L
+                git clone https://github.com/Yaminiooty/U2L.git /home/U22L"
+                chmod 777 
+                 pwd
+                cd /home/U22L
+                pwd
+                docker-compose up -d
                              
                   }
            }
-       stage('docker-compose') {
-      
-           steps {
-              
-              sh "docker-compose up -d"
-              
-           }
-       }
+       
    }
 }  
 

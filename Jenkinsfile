@@ -17,8 +17,8 @@ pipeline {
        stage('docker-compose') {
       
            steps {
-              
-              sh "docker-compose -f ~/U2L/docker-compose.yml up -d"
+              sh "cd /root"
+              sh "docker-compose -f /U2L/docker-compose.yml up -d"
               
            }
        }

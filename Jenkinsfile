@@ -5,7 +5,7 @@ pipeline {
      stages {
        stage('checkout') {
            steps {
-               sh  
+               sh '''
                 cd /home 
                 mkdir U22L
                 git clone https://github.com/Yaminiooty/U2L.git /home/U22L
@@ -14,7 +14,7 @@ pipeline {
                 cd /home/U22L
                 pwd
                 docker-compose up -d
-                             
+                          '''   
                   }
            }
        

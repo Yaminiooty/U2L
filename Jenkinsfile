@@ -7,7 +7,7 @@ pipeline {
            steps {
                
                sh " git clone https://github.com/Yaminiooty/U2L.git"
-               sh "cd /var/jenkins_home/workspace"
+               sh "cd /var/jenkins_home/workspace/JenkinsPipeline"
                sh "ls -a"
                sh "mv U2L /home"
                sh "cd home"

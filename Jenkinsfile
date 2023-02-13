@@ -16,7 +16,7 @@ pipeline {
       
            steps {
               
-              sh "docker-compose -f /var/jenkins_home/workspace/JenkinsPipeline/U2L/docker-compose.yml up -d"
+              sh "docker-compose -f ./docker-compose.yml up -d"
               
            }
        }

@@ -9,8 +9,8 @@ pipeline {
                sh " git clone https://github.com/Yaminiooty/U2L.git"
                sh "cd /var/jenkins_home/workspace/JenkinsPipeline"
                sh "ls -a"
-               sh "mv U2L /home"
-               sh "cd home"
+               sh "mv JenkinsPipeline /home"
+               sh "cd home/U2L"
 
                
                   }

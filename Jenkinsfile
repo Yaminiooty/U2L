@@ -11,8 +11,8 @@ pipeline {
                sh "ls -a"
                sh "cd /var/jenkins_home/workspace/JenkinsPipeline"
                sh "ls -a"
-               sh "mv U2L /home"
-               sh "cd /home/U2L"
+               sh "mv U2L /root"
+               sh "cd /root/U2L"
 
                
                   }
